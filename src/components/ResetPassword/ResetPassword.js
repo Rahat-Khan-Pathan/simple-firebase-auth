@@ -19,11 +19,14 @@ const ResetPassword = () => {
       .catch((error) => {
         if (error.code === "auth/user-not-found") {
           setMessage("No user found for this email. Please Sign Up first");
-          openModal();
-        } else {
-          setMessage("Something went wrong. Please try again later");
-          openModal();
+        } 
+        else if(error.code === 'auth/invalid-email') {
+          setMessage("Invalid Email");
         }
+        else {
+          setMessage("Something went wrong. Please try again later");
+        }
+        openModal();
       });
   };
   const openModal = () => {

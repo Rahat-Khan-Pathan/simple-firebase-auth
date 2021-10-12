@@ -3,7 +3,7 @@ import '../../Styles/Modal.css';
 
 const Modal = (props) => {
   return (
-    <div>
+    <div className="d-flex justify-content-center">
       <button
         hidden
         type="button"
