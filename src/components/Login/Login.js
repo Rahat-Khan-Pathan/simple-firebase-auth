@@ -22,6 +22,7 @@ const Login = () => {
   const [message, setMessage] = useState("");
   const [user, setUser] = useState(null);
 
+
   const auth = getAuth();
 
   const googleProvider = new GoogleAuthProvider();
@@ -86,6 +87,7 @@ const Login = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         const user = result.user;
+        user.emailVerified = true;
         setUser(user);
       })
       .catch((error) => {
@@ -98,6 +100,7 @@ const Login = () => {
     signInWithPopup(auth, githubProvider)
       .then((result) => {
         const user = result.user;
+        user.emailVerified = true;
         setUser(user);
       })
       .catch((error) => {
@@ -110,6 +113,7 @@ const Login = () => {
     signInWithPopup(auth, facebookProvider)
       .then((result) => {
         const user = result.user;
+        user.emailVerified = true;
         setUser(user);
       })
       .catch((error) => {
