@@ -1,0 +1,38 @@
+/* User component styles  */
+.user-container {
+    min-height: 100vh;
+}
+.user-card {
+    padding: 15px;
+    background-color: #f0f8ff;
+    box-shadow: 0px 0px 10px 1.5px rgba(54, 32, 32, 0.2) !important;
+    color: black;
+    border-radius: 15px;
+  }
+  .user-body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .user-title {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .my-box {
+      width: 90%;
+  }
+  .user-img {
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+    margin: auto;
+  }
+  .bold-name {
+    font-weight: 700;
+    color: #0077b6;
+    margin-right: 5px;
+  }
+  .icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  

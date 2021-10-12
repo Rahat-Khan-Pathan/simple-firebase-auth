@@ -1,0 +1,32 @@
+.container-login100 {
+    background: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.wrap-login100 {
+    padding: 65px 55px 55px 55px;
+}
+.login100-form-title {
+    padding-bottom: 50px;
+}
+.validate-input {
+    margin-bottom: 23px;
+}
+.text-end {
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.txt1 {
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+.text-end button {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+}
+.txt2 {
+    border-bottom: 1px solid gray;
+}
